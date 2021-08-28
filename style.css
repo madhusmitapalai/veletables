@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-transform: capitalize;
+}
+.banner {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKCAEDmUIZQ6vykDXhPQbZUC9iYcgdSwm6hLz1Z6V0bQMTaG8s1sjY-Dgok62mXExdRlk&usqp=CAU);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+/*navbar*/
+.navbar {
+  width: 100%;
+  background-color: teal;
+}
+.navbar-menu {
+  background-color: teal;
+}
+.navbar-nav,
+.nav-item {
+  color: aliceblue;
+}
+.navbar-nav .nav-link {
+  color: aliceblue;
+}
+.search-box {
+  border: 1px solid white;
+  border-radius: 80px;
+  background: white;
+  width: max-content;
+  margin: 8px;
+}
+.search-box:hover {
+  box-shadow: 0 0 10px 20px #5b8c5a;
+  border: 1px solid green;
+}
+.search-input {
+  width: 250px;
+  border: none;
+  font-size: 16px;
+  margin: 15px 5px 10px 15px;
+  outline: none;
+  background: transparent;
+}
+.icons {
+  font-size: 25px;
+  padding: 7px;
+}
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 90px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  text-transform: capitalize;
+  word-spacing: 25px;
+  padding-top: 6rem;
+}
+
+.category .row {
+  display: flex;
+  justify-content: space-around;
+  text-transform: capitalize;
+  color: white;
+}
+.category .col-12 .card {
+  background: linear-gradient(to right, #20bdff, #2b9e46);
+  border-radius: 8rem;
+}
+.card-img-top {
+  border-radius: 6rem;
+  text-align: center;
+}
+#vegetable-description-one .col-12:hover {
+  box-shadow: 0 0 10px 3px green;
+}
+#fruit-description-two .col-12:hover {
+  box-shadow: 0 0 10px 3px green;
+}
+#meat-description .col-12:hover {
+  box-shadow: 0 0 10px 3px green;
+}
+
+/*vegetables-description*/
+.header {
+  font-size: 50px;
+  width: 100%;
+  padding-top: 4rem;
+  height: 30vh;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhyQYZdcMY8NgdJrxzkwjkvLId0392AVwkgQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-transform: capitalize;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+#vegetable-description-one .col-12 {
+  justify-content: space-around;
+  display: flex;
+  color: white;
+  font-size: 1em;
+}
+#vegetable-description-one .col-12 .card {
+  background: linear-gradient(to right, #14a50f, #93f9b9);
+  border-radius: 8rem;
+}
+#fruit-description-two .col-12 {
+  justify-content: space-around;
+  display: flex;
+  color: white;
+  font-size: 1em;
+}
+#fruit-description-two .col-12 .card {
+  background: linear-gradient(to right, #1d976c, #93f9b9);
+  border-radius: 8rem;
+}
+#meat-description .col-12 .card {
+  background: linear-gradient(to right, #c7953e, #2dc056);
+  border-radius: 8rem;
+}
+#meat-description .col-12 {
+  justify-content: space-around;
+  color: white;
+  display: flex;
+  font-size: 1em;
+}
+
+.fruit {
+  font-size: 100px;
+  width: 100%;
+  padding-top: 1em;
+  text-align: center;
+  height: 30vh;
+  color: white;
+  background: linear-gradient(rgba(44, 43, 43, 0.7), rgba(73, 72, 72, 0.5)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkHROBAckRLWrkpkrPaRpV57UOu1boUOiqgA&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*meats*/
+.meat {
+  font-size: 100px;
+  padding-top: 1em;
+  width: 100%;
+  height: 30vh;
+  color: white;
+  background: linear-gradient(rgba(44, 43, 43, 0.7), rgba(73, 72, 72, 0.5)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw-pP_msYBKt01PHU1qRD4RJHfsg9W85BEfQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-transform: capitalize;
+  justify-content: center;
+}
+/*iconbar*/
+#iconbar {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  color: rgb(133, 133, 82);
+  opacity: 0;
+  visibility: hidden;
+}
+#iconbar:hover {
+  color: white;
+}
+@media (max-width: 600px) {
+  #iconbar {
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar-menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .meat {
+    width: 100%;
+  }
+  .fruit {
+    width: 100%;
+  }
+  .vegetable {
+    width: 100%;
+  }
+}
+#footer {
+  background: linear-gradient(rgba(75, 72, 72, 0.7), rgba(81, 83, 82, 0.7)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9x8PGxQ0xdlFBdiqRL1HiJbN-8EaogARMBykczLG_10Ps5-aUUg35Q1XickZkMQuF9ak&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding-top: 3rem;
+  text-transform: capitalize;
+  box-shadow: 0 0 0 0;
+}
+#footer .row {
+  margin-top: 4rem;
+}
+#footer ul {
+  padding: 15px;
+  list-style-type: none;
+}
+#footer ul li {
+  padding: 10px;
+}
+#footer li:hover {
+  color: rgb(217, 240, 166);
+}
